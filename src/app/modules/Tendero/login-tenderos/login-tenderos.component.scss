@@ -30,3 +30,22 @@
     /*change color of underline when focused*/
     background-color: var(--orange-good) !important;
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: var(--grey-good);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .item2 {
+    max-width: 400px; /* Ajusta el valor según tus preferencias */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+  }
