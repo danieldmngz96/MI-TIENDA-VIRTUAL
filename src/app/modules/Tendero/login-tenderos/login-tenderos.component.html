@@ -1,4 +1,38 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="../../../assets/logo_Efequipos-1.jpg" class="img-fluid w-100" alt="logo Tienda virtual">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <!-- Columna Izquierda - Mensaje de Bienvenida -->
+        <div class="welcome-message">
+          <p class="lead fw-normal mb-0 me-3">Bienvenido a Mi Tienda Virtual</p>
+        </div>
 
-<p>
-  login-tenderos works!
-</p>
+        <!-- Columna Derecha - Formulario de Inicio de Sesión -->
+        <div class="login-form">
+          <form [formGroup]="loginForm">
+            <mat-form-field class="fill w-100
+            my-custom-input">
+              <mat-label>Correo</mat-label>
+              <input matInput type="text" placeholder="Correo" name="username" formControlName="username">
+              <mat-error *ngIf="loginForm.controls['username'].hasError('required')">* Campo requerido</mat-error>
+              <mat-error *ngIf="loginForm.controls['username'].hasError('email')">* Email no valido</mat-error>
+            </mat-form-field>
+  
+            <!-- Password input -->
+            <mat-form-field class="fill w-100">
+              <mat-label>Contraseña</mat-label>
+              <input matInput  [type]="hide ? 'password' : 'text'" placeholder="Contraseña" name="password" formControlName="password">
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              <mat-error *ngIf="loginForm.controls['password'].hasError('required')"> * Campo requerido</mat-error>
+              <mat-error *ngIf="loginForm.controls['password'].hasError('minLength')"> * Minimo 8 digitos</mat-error>
+              <mat-error *ngIf="loginForm.controls['password'].hasError('maxLength')"> * Maximo 16 digitos</mat-error>
+            </mat-form-field>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

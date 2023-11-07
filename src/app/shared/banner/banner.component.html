@@ -1,1 +1,33 @@
-<h1>TITULO BANNER</h1>
+<nav class="menu">
+   
+    <img src="../../../assets/img/store.jpg" alt="store" width="120px" height="60px" style="margin-left: 26px;
+    margin-right: 30px;
+    margin-top: 20px;">
+  
+        <button mat-button [matMenuTriggerFor]="aboveMenu">Tenderos</button>
+        <mat-menu #aboveMenu="matMenu" yPosition="above">
+          <button mat-menu-item>Registro de Tenderos</button>
+          <button mat-menu-item>Login tenderos</button>
+        </mat-menu>
+        
+        <button mat-button [matMenuTriggerFor]="belowMenu">Clientes</button>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+          <button mat-menu-item>Registro de Clientes</button>
+          <button mat-menu-item>Login clientes</button>
+        </mat-menu>
+        
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+        
+        
+        <button mat-button [matMenuTriggerFor]="afterMenu">MI TIENDA VIRTUAL</button>
+        <mat-menu #afterMenu="matMenu" xPosition="after">
+          <button mat-menu-item>¿Quines Somos?</button>
+          <button mat-menu-item>Sobre MI TIENDA VIRTUAL</button>
+        </mat-menu>
+
+   
+</nav>

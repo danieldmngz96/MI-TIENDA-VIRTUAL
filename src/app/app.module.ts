@@ -8,8 +8,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './shared/material/material.module';
 import { MatDialogModule } from '@angular/material/dialog';
-import { FooterModule } from './shared/footer/footer.module';
+
 import { RouterModule } from '@angular/router';
+import { FooterModule } from './shared/footer/footer.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginTenderosComponent } from './modules/Tendero/login-tenderos/login-tenderos.component';
 
 
 
@@ -17,6 +20,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
+    LoginTenderosComponent
   ],
   imports: [
     FormsModule,
@@ -24,11 +28,12 @@ import { RouterModule } from '@angular/router';
     MaterialModule,
     RouterModule,
     ReactiveFormsModule,
-    FooterModule,
     MatDialogModule,
     BrowserModule,
     AppRoutingModule,
-    BannerModule
+    BannerModule,
+    FooterModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
