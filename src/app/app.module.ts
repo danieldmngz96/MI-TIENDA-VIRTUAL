@@ -20,8 +20,8 @@ import { LoginClientesComponent } from './modules/Clientes/login-clientes/login-
 @NgModule({
   declarations: [
     AppComponent,
-    LoginTenderosComponent,
-    LoginClientesComponent
+    LoginClientesComponent,
+    LoginTenderosComponent
   ],
   imports: [
     FormsModule,

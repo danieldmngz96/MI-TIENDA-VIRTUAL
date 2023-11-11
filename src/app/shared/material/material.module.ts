@@ -42,6 +42,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -49,6 +50,9 @@ import { NgModule } from '@angular/core';
 @NgModule({
   declarations: [],
   imports: [
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
 ],
   exports: [
     MatCardModule,
