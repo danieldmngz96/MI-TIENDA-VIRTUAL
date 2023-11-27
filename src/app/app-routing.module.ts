@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginTenderosComponent } from './modules/Tendero/login-tenderos/login-tenderos.component';
 import { LoginClientesComponent } from './modules/Clientes/login-clientes/login-clientes.component';
+import { LandingComponent } from './modules/landing/landing.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginClientesComponent,
+    component: LandingComponent,
     children: [
       {
         path: 'home',
