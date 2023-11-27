@@ -9,7 +9,6 @@ import { MaterialModule } from '../material/material.module';
     CommonModule,
     RouterModule,
     MaterialModule,
-    
   ],
   declarations: [BannerComponent],
   exports: [BannerComponent]
