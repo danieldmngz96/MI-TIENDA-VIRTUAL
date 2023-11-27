@@ -21,7 +21,7 @@ import { LoginClientesComponent } from './modules/Clientes/login-clientes/login-
   declarations: [
     AppComponent,
     LoginClientesComponent,
-    LoginTenderosComponent
+    LoginTenderosComponent,
   ],
   imports: [
     FormsModule,
