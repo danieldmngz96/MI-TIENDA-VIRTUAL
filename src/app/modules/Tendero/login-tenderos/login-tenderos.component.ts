@@ -13,7 +13,7 @@ export class LoginTenderosComponent implements OnInit {
   hide = true;
   onlyEfequiposEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
-  constructor(    private router: Router,) { }
+  constructor( private router: Router,) { }
 
   ngOnInit() {
     this.loginForm = new FormGroup({
@@ -58,4 +58,5 @@ export class LoginTenderosComponent implements OnInit {
       });
     }); */
   }
+  
 }
