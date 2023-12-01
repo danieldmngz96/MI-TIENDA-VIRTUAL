@@ -19,29 +19,14 @@
               <a href="#">aquí</a> para crearla gratis
             </p>
             <hr />
-            <label for="email"><b>Correo electrónico</b></label>
-            <input type="email" #email="ngModel" [(ngModel)]="loginForm" placeholder="Introduzca la correo electrónico"
-              name="email" class="form-control" required
-              [ngClass]="{'is-valid': !email.invalid, 'is-invalid': email.invalid}"
-              pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" />
-            <div class="alert alert-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
-              <div *ngIf="email.errors?.['required']">
-                Introduzca un correo electrónico válido por favor
-              </div>
-              <div *ngIf="email.errors && email.errors?.['pattern']">
-                El correo electrónico no sigue el formato correcto. Sigue este ejemplo: anartz@mitiendavirtual.com
-              </div>
-            </div>
-
+            <label for="tel"><b>Correo electrónico</b></label>
+            <input matInput
+             type="text"
+            (keypress)="validateFormat($event)" placeholder="Introduzca numero de celular" name="email" class="form-control">
+            <br>
             <label for="psw"><b>Contraseña</b></label>
-            <input type="password" placeholder="Introduzca la contraseña" #password="ngModel" [(ngModel)]="loginForm"
-              name="password" class="form-control"
-              [ngClass]="{'is-valid': !password.invalid, 'is-invalid': password.invalid}" required />
-            <div class="alert alert-danger" *ngIf="password.invalid && (password.dirty || password.touched)">
-              <div *ngIf="password.errors?.['required']">
-                Introduzca una contraseña por favor
-              </div>
-            </div>
+            <input type="password" placeholder="Introduzca la contraseña" name="password" class="form-control" />
+
 
             <div class="row">
               <div class="col-lg">

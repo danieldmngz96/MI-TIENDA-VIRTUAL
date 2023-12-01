@@ -7,13 +7,13 @@
         <button mat-button [matMenuTriggerFor]="aboveMenu">Tenderos</button>
         <mat-menu #aboveMenu="matMenu" yPosition="above">
           <button mat-menu-item>Registro de Tenderos</button>
-          <button mat-menu-item>Login tenderos</button>
+          <button  [routerLink]="['/login-tenderos']" mat-menu-item>Login tenderos</button>
         </mat-menu>
         
         <button mat-button [matMenuTriggerFor]="belowMenu">Clientes</button>
         <mat-menu #belowMenu="matMenu" yPosition="below">
           <button mat-menu-item>Registro de Clientes</button>
-          <button mat-menu-item>Login clientes</button>
+          <button [routerLink]="['/login-clientes']" mat-menu-item>Login clientes</button>
         </mat-menu>
         
         <button mat-button [matMenuTriggerFor]="menu">Menu</button>

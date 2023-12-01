@@ -1,0 +1,238 @@
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: var(--orange-good) !important;
+  }
+  
+  ::ng-deep .mat-form-field-underline {
+    /*change color of underline*/
+    background-color: var(--orange-good) !important;
+  }
+  
+  ::ng-deep .mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: var(--orange-good) !important;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: var(--grey-good);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .item2 {
+    max-width: 400px; /* Ajusta el valor según tus preferencias */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+  }
+
+  form {
+    border: 1px solid #ccc;
+    padding: 16px;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .signup-btn {
+    background-color: #4caf50;
+  }
+  
+  .signup-btn:disabled {
+    background-color: #7c7d7c;
+    cursor: not-allowed
+  }
+  
+  .signup-btn:active {
+    background-color: #235623;
+  }
+  
+  .signup-btn:hover, .cancel-btn:hover {
+    opacity: 1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancel-btn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  .signup-btn, .cancel-btn {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancel-btn, .signup-btn {
+    width: 100%;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancel-btn, .signup-btn {
+      width: 100%;
+    }
+  }.divider:after,
+  .divider:before {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #eee;
+  }
+  
+  .h-custom {
+      height: calc(100% - 73px);
+  }
+  
+  @media (max-width: 450px) {
+      .h-custom {
+          height: 100%;
+      }
+  }
+  
+  ::ng-deep .mat-focused .mat-form-field-label {
+      /*change color of label*/
+      color: var(--orange-good) !important;
+    }
+    
+    ::ng-deep .mat-form-field-underline {
+      /*change color of underline*/
+      background-color: var(--orange-good) !important;
+    }
+    
+    ::ng-deep .mat-form-field-ripple {
+      /*change color of underline when focused*/
+      background-color: var(--orange-good) !important;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      background-color: #ffffff;
+      padding: 10px;
+    }
+    
+    .grid-container > div {
+      background-color: var(--grey-good);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+  
+    .item2 {
+      max-width: 400px; /* Ajusta el valor según tus preferencias */
+      margin: 0 auto; /* Centra el formulario horizontalmente */
+    }
+  
+    form {
+      border: 1px solid #ccc;
+      padding: 16px;
+    }
+    
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    /* Set a style for all buttons */
+    .signup-btn {
+      background-color: #4caf50;
+    }
+    
+    .signup-btn:disabled {
+      background-color: #7c7d7c;
+      cursor: not-allowed
+    }
+    
+    .signup-btn:active {
+      background-color: #235623;
+    }
+    
+    .signup-btn:hover, .cancel-btn:hover {
+      opacity: 1;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancel-btn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+    
+    .signup-btn, .cancel-btn {
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    /* Float cancel and signup buttons and add an equal width */
+    .cancel-btn, .signup-btn {
+      width: 100%;
+    }
+    
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+      .cancel-btn, .signup-btn {
+        width: 100%;
+      }
+    }
