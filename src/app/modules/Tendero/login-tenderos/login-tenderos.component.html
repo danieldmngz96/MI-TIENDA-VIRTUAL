@@ -13,13 +13,14 @@
         <div class="col-lg-6">
           <form #forma="ngForm">
             <h1>Inicio de sesión</h1>
+            <i style="text-align: center;">Tenderos</i>
             <p>Introduzca los credenciales para iniciar la sesión</p>
             <p class="psw">
               ¿No tienes cuenta? Entra
               <a href="#">aquí</a> para crearla gratis
             </p>
             <hr />
-            <label for="tel"><b>Correo electrónico</b></label>
+            <label for="tel"><b>Ingresa numero de <br> Celular</b></label>
             <input matInput
              type="text"
             (keypress)="validateFormat($event)" placeholder="Introduzca numero de celular" name="email" class="form-control">
