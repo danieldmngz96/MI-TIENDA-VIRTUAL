@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginTenderosComponent } from './modules/Tendero/login-tenderos/login-tenderos.component';
 import { LoginClientesComponent } from './modules/Clientes/login-clientes/login-clientes.component';
 import { LandingComponent } from './modules/landing/landing.component';
+import { RegistroTenderosComponent } from './modules/Registro-tenderos/Registro-tenderos.component';
+import { RegistroClientesComponent } from './modules/Registro-clientes/Registro-clientes.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,14 @@ const routes: Routes = [
   {
     path: 'login-tenderos',
     component: LoginTenderosComponent,
+  },
+  {
+    path: 'register-tenderos',
+    component: RegistroTenderosComponent,
+  },
+  {
+    path: 'register-clientes',
+    component: RegistroClientesComponent,
   }
 ]
 
