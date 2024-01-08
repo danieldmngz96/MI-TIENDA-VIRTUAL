@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,13 +13,12 @@ export class LoginClientesComponent implements OnInit {
   hide = true;
   onlyEfequiposEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
-  constructor(    private router: Router,) { }
+  constructor(private router: Router,) { }
 
   ngOnInit() {
     this.loginForm = new FormGroup({
-      username: new FormControl(''),
-      password: new FormControl('',
-      ),
+      celular: new FormControl('', [Validators.required]),
+      password: new FormControl('', [Validators.required]),
     });
   }
 
@@ -75,4 +74,5 @@ export class LoginClientesComponent implements OnInit {
        }
      }
     }
+    
 }
